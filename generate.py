@@ -2,7 +2,12 @@ import string
 import itertools
 import argparse
 import sys
-from tqdm import tqdm
+try:
+    from tqdm import tqdm
+except:
+    print("""You must install tqdm first to run the script ('pip install tqdm'or 'python3 -m pip install tqdm')
+If 'python3 -m pip install tqdm' don't work, try to do 'py -m pip install tqdm' or 'py3 -m pip install tqdm'""")
+    sys.exit()
 
 def generate_passwords_sequence(max_length):
     def language_selection(language):
