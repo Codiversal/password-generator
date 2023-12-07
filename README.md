@@ -8,6 +8,24 @@ Supported languages for the moment are Latin and Greek.
 ### Prerequisites
 
 - Python 3.x installed on your system.
+- TQDM must be installed. This is a progress bar to see while the program generates passwords.
+  > To install tqdm run the following command on your command prompt:
+  ```bash
+  pip install tqdm
+  ```
+  > If this doesn't work for you try one of the following
+  ```bash
+  py -m pip install tqdm
+  ```
+  ```bash
+  py3 -m pip install tqdm
+  ```
+  ```bash
+  python -m pip install tqdm
+  ```
+  ```bash
+  python3 -m pip install tqdm
+  ```
 
 ### Script Features
 
@@ -31,7 +49,7 @@ Supported languages for the moment are Latin and Greek.
     ```bash
     python3 generate.py -m <max_length> -n <min_length> -o <output_file> -c <custom_char> -l <language>
     ```
-> You don't have to define all the arguments to run the script. Choose only the arguments that you want. All arguments have default values (see below)
+    > You don't have to define all the arguments to run the script. Choose only the arguments that you want. All arguments have default values (see below)
 ### Command-line Arguments
 
 - `-m, --max_length`: Define the maximum length of characters in your wordlist (default is 1).
